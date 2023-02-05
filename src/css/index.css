@@ -1,0 +1,91 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+}
+
+.card {
+    background-color: var(--black);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.4rem;
+    border-radius: .8rem;
+    max-width: 42rem;
+}
+
+.search-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+}
+
+.search-field input {
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    padding: .8rem 1.6rem;
+    border-top-left-radius: .4rem;
+    border-bottom-left-radius: .4rem;
+    background-color: #7c7c7c2b;
+}
+
+.search-field button {
+    display: flex;
+    align-items: center;
+    font-size: 3.2rem;
+    background-color: #7c7c7c2b;
+    outline: none;
+    border: none;
+    padding: 1.15rem 1.6rem;
+    border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.search-field button:hover {
+    scale: 1.05;
+    border-radius: .4rem;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.results h2 {
+    font-size: 2.8rem;
+    max-width: 32.8rem;
+}
+
+.results .temperature {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.results .description {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.results .description img {
+    scale: 1.5;
+}
+
+.results .description p {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+.results .humidity {
+    font-size: 1.8rem;
+}
